@@ -1,0 +1,63 @@
+plugins {
+	id 'com.android.application'
+	id 'org.jetbrains.kotlin.android'
+	id 'kotlin-kapt'
+}
+
+android {
+    compileSdk 33
+    namespace "com.aldringames.scjd"
+
+    defaultConfig {
+        applicationId "com.aldringames.scjd"
+        minSdkVersion 19
+        targetSdkVersion 33
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+		coreLibraryDesugaringEnabled true
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+kapt {
+    correctErrorTypes true 
+} 
+
+dependencies {
+	implementation Deps.kotlinStdlibJdk8
+    implementation Deps.appcompat
+    implementation Deps.material
+    debugImplementation Deps.leakcanary
+
+    implementation Deps.dagger
+    kapt Deps.daggerCompiler
+    
+    implementation Deps.multidex
+    
+    implementation Deps.timber
+    
+    implementation Deps.curtains
+    
+    coreLibraryDesugaring Deps.desugarJdkLibs
+    
+    implementation Deps.coroutinesJdk8
+    implementation Deps.coroutinesAndroid
+    testImplementation Deps.coroutinesTest
+}

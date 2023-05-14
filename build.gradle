@@ -1,0 +1,21 @@
+buildscript {
+    repositories {
+		mavenCentral()
+		google()
+    }
+    dependencies {
+        classpath Deps.androidGradle
+        classpath Deps.kotlinGradle
+    }
+}
+
+allprojects {
+    repositories {
+        mavenCentral()
+        google()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
