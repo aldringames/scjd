@@ -5,7 +5,7 @@ plugins {
 }
 
 android {
-	namespace "com.aldringames.scjd"
+    namespace "com.aldringames.scjd"
     compileSdk 33
 
     defaultConfig {
