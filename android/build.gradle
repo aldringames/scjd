@@ -5,8 +5,8 @@ plugins {
 }
 
 android {
+	namespace "com.aldringames.scjd"
     compileSdk 33
-    namespace "com.aldringames.scjd"
 
     defaultConfig {
         applicationId "com.aldringames.scjd"
@@ -41,8 +41,10 @@ kapt {
 } 
 
 dependencies {
-    implementation Deps.kotlinStdlibJdk8
-    implementation Deps.androixAppcompat
+	implementation project(":common")
+	
+    // implementation Deps.kotlinStdlibJdk8
+    implementation Deps.androidxAppcompat
     implementation Deps.googleMaterial
     debugImplementation Deps.leakcanary
 
@@ -57,7 +59,7 @@ dependencies {
     
     coreLibraryDesugaring Deps.desugarJdkLibs
     
-    implementation Deps.coroutinesJdk8
-    implementation Deps.coroutinesAndroid
-    testImplementation Deps.coroutinesTest
+    // implementation Deps.coroutinesJdk8
+    // implementation Deps.coroutinesAndroid
+    // testImplementation Deps.coroutinesTest
 }

@@ -15,6 +15,7 @@ object Versions {
 object Deps {
 	const val androidGradle     =                "com.android.tools.build:gradle:${Versions.androidGradle}"
 	const val kotlinStdlibJdk8  =              "org.jetbrains.kotlin:kotlin-stdlib-jdk8:${Versions.kotlin}"
+	const val kotlinTest        =                     "org.jetbrains.kotlin:kotlin-test:${Versions.kotlin}"
 	const val kotlinGradle      =            "org.jetbrains.kotlin:kotlin-gradle-plugin:${Versions.kotlin}"
 	const val desugarJdkLibs    =           "com.android.tools:desugar_jdk_libs:${Versions.desugarJdkLibs}"
 	const val androidxAppcompat =                      "androidx.appcompat:appcompat:${Versions.androidxAppcompat}"
