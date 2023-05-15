@@ -1,7 +1,7 @@
 plugins {
-	id 'com.android.application'
-	id 'org.jetbrains.kotlin.android'
-	id 'kotlin-kapt'
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'kotlin-kapt'
 }
 
 android {
@@ -10,10 +10,10 @@ android {
 
     defaultConfig {
         applicationId "com.aldringames.scjd"
-        minSdkVersion 19
+        minSdkVersion 21
         targetSdkVersion 33
         versionCode 1
-        versionName "1.0"
+        versionName "1.0-alpha1"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         multiDexEnabled true
     }
@@ -26,7 +26,7 @@ android {
     }
 
     compileOptions {
-		coreLibraryDesugaringEnabled true
+	coreLibraryDesugaringEnabled true
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
@@ -41,15 +41,15 @@ kapt {
 } 
 
 dependencies {
-	implementation Deps.kotlinStdlibJdk8
-    implementation Deps.appcompat
-    implementation Deps.material
+    implementation Deps.kotlinStdlibJdk8
+    implementation Deps.androixAppcompat
+    implementation Deps.googleMaterial
     debugImplementation Deps.leakcanary
 
     implementation Deps.dagger
     kapt Deps.daggerCompiler
     
-    implementation Deps.multidex
+    implementation Deps.androidxMultidex
     
     implementation Deps.timber
     
