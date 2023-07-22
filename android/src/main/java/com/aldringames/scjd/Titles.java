@@ -5,7 +5,7 @@ public class Titles {
 		public static String NAME = "SpongeBob-SquarePants";
 		public static class EPISODES {
 			public static String[] MINS2 ={
-				"Reef-Blower",
+				// "Reef-Blower",
 				"Rise-and-Shine",
 				"Boat-Smarts",
 				"SpongeBob-vs-The-Patty-Gadget",
@@ -20,11 +20,11 @@ public class Titles {
 				"Picture-Day",
 			};
 			public static String[] MINS8 = {
-				"Help-Wanted",
+				// "Help-Wanted",
 				"The-Bad-Guy-Club-for-Villains",
 			};
 			public static String[] MINS10 = {
-				"Tea-at-the-Treedome",
+				/* "Tea-at-the-Treedome",
 				"Bubblestand",
 				"Ripped-Pants",
 				"Jellyfishing",
@@ -62,7 +62,7 @@ public class Titles {
 				"Fools-in-April",
 				"Neptunes-Spatula",
 				"Hooky",
-				"Mermaid-Man-and-Barnacle-Boy-II",
+				"Mermaid-Man-and-Barnacle-Boy-II", */
 				"Your-Shoes-Untied",
 				"Squids-Day-Off",
 				"Something-Smells",
